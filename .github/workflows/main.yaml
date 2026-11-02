@@ -17,4 +17,18 @@ jobs:
         run: |
           echo "Running segunda action"
           echo "This is a multi-line command"
+
+  setup-basico:
+    name: "Setup Basico"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verificação versão do node"
+        run: node -v
+      - name: "Checkout codigo"
+        uses: actions/checkout@v7
+        with:
+          node-version: '26.13.0'
+      - name: "Verificação versão do node pós checkout"
+        run: node -v
+
         
