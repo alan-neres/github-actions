@@ -21,7 +21,7 @@ jobs:
   setup-basico:
     name: "Setup Basico"
     runs-on: ubuntu-latest
-    depends-on: primerio-job
+    depends-on: Primerio Job
     steps:
       - name: "Verificação versão do node"
         run: node -v
