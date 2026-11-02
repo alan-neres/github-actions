@@ -1,0 +1,20 @@
+name: primeria-pipeline
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  primerio-job:
+    name: "Primerio Job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Primeria action
+        run: echo "Running Primeria action"
+      - name: segunda action
+        run: |
+          echo "Running segunda action"
+          echo "This is a multi-line command"
+        
